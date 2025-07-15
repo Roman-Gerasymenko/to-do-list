@@ -6,63 +6,45 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(120deg, #89f7fe, #66a6ff);
+  background: linear-gradient(120deg, #ffe0c3, #ff8c8c);
   background-size: 200% 200%;
   animation: gradientShift 15s ease infinite;
   min-height: 100vh;
   padding: 40px;
 }
 
-/* Background animation */
 @keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .container {
   max-width: 900px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #fff8f4;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   animation: floatIn 0.5s ease;
 }
 
 @keyframes floatIn {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(30px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
 }
 
 h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: #333;
+  color: #5c2a2a;
   margin-bottom: 30px;
   animation: titleGlow 2s ease-in-out infinite;
 }
 
 @keyframes titleGlow {
-  0%,
-  100% {
-    text-shadow: 0 0 10px #66a6ff;
-  }
-  50% {
-    text-shadow: 0 0 20px #89f7fe;
-  }
+  0%, 100% { text-shadow: 0 0 10px #ffa07a; }
+  50%      { text-shadow: 0 0 20px #ffb347; }
 }
 
 #list-creator {
@@ -77,18 +59,18 @@ h1 {
   padding: 12px;
   width: 60%;
   max-width: 400px;
-  border: 2px solid #66a6ff;
+  border: 2px solid #ff8c8c;
   border-radius: 8px;
   outline: none;
 }
 
 #list-creator input:focus {
-  box-shadow: 0 0 8px #66a6ff;
+  box-shadow: 0 0 8px #ff8c8c;
 }
 
 #list-creator button {
   padding: 12px 20px;
-  background-color: #66a6ff;
+  background-color: #ff8c8c;
   color: white;
   border: none;
   border-radius: 8px;
@@ -98,13 +80,13 @@ h1 {
 }
 
 #list-creator button:hover {
-  background-color: #5283d1;
+  background-color: #e06666;
   transform: scale(1.05);
 }
 
 .list {
-  background-color: #f4faff;
-  border-left: 5px solid #66a6ff;
+  background-color: #fff3eb;
+  border-left: 5px solid #ff8c8c;
   padding: 20px;
   border-radius: 15px;
   margin-bottom: 25px;
@@ -112,20 +94,14 @@ h1 {
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .list h2 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: #333;
+  color: #4b2c2c;
 }
 
 .list input[type="text"] {
@@ -146,16 +122,16 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 10px 15px;
-  border: 1px solid #ddd;
-  border-left: 4px solid #ccc;
+  border: 1px solid #ffd4d4;
+  border-left: 4px solid #ff8c8c;
   border-radius: 10px;
   transition: 0.2s ease;
 }
 
 .task:hover {
-  background-color: #e6f0ff;
+  background-color: #fff0eb;
   transform: translateY(-2px);
 }
 
@@ -167,16 +143,17 @@ h1 {
 .task span {
   flex-grow: 1;
   cursor: pointer;
+  color: #333;
 }
 
 .task span.completed {
   text-decoration: line-through;
-  color: #888;
+  color: #999;
   font-style: italic;
 }
 
 .task button {
-  background-color: #ff4d4d;
+  background-color: #ff6f61;
   color: white;
   border: none;
   padding: 6px 12px;
@@ -186,7 +163,7 @@ h1 {
 }
 
 .task button:hover {
-  background-color: #cc0000;
+  background-color: #c94c4c;
   transform: scale(1.05);
 }
 
